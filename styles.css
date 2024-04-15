@@ -236,6 +236,11 @@ header {
 .feature-search{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search{
+  margin-left: 10px;
 }
 
 .search {
