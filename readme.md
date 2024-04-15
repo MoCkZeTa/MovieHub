@@ -12,7 +12,7 @@ Welcome to MovieHub, your one-stop destination for all things movies! Explore ou
 ## Features
 - Responsiveness
   - The website is fully responsive
-![Website Preview](Responsive.png "Responsive on all screen sizes")
+![Website Preview](Responsive.jpg "Responsive on all screen sizes")
   
 - The Navigation Bar
    - Use the `navigation button` to jump into different sections of the website
