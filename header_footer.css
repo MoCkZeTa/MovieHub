@@ -89,6 +89,10 @@ a {
 	color: white;
 }
 
+
+/* footer css */
+
+
 footer {
 	text-align: center;
 }
@@ -105,17 +109,13 @@ footer {
 
 ul {
 	list-style: none;
+	padding: 0px;
 }
 
 .footer {
 	background-color: #24262b;
 	padding: 70px 0;
 }
-
-.footer-col1 {
-	padding: 0 15px;
-}
-
 
 .footer-col1 h4 {
 	color: #ffffff;
@@ -200,21 +200,6 @@ ul {
 	.footer-col2 .social-links {
 		font-size: 15px;
 	}
-
-	.footer-col2 h4 {
-		margin-left: 29%;
-	}
-
-	.footer-col2 {
-		margin-block-start: 10%;
-		margin-inline-start: 25%;
-		padding: 15px -30px -40px;
-	}
-
-	.footer-col1 {
-		margin-inline-start: 30%;
-		padding: 15px -30px -40px;
-	}
 }
 
 
@@ -231,11 +216,8 @@ ul {
 	text-overflow: ellipsis;
   }
 
-/* Add this to your existing CSS */
-
-/* Add this to your existing CSS */
 .hamburger {
-    display: none; /* Hide by default */
+    display: none;
     cursor: pointer;
 }
 
@@ -247,7 +229,6 @@ ul {
     transition: 0.4s;
 }
 
-/* Rotate first and third bar */
 .change .bar:nth-child(1) {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);

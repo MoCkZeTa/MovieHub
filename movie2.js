@@ -13,10 +13,15 @@ let blur_image=document.querySelector(".blur_image")
 let genres=document.querySelector(".genres")
 let director_value=document.querySelector(".director_value")
 let writer_value=document.querySelector(".writer_value")
+let addToWishlistBtn=document.getElementById("add-wishlist")
+console.log(addToWishlistBtn)
 
 
-// let add_to_wishlist_btn=document.getElementsByClassName(".add_to_wishlist")[0]
-// console.log(add_to_wishlist_btn)
+setTimeout(()=>{
+    localStorage.removeItem("clickedLinkData2")
+},5000)
+
+
 
 const base_url = "https://www.omdbapi.com/?apikey=ce9facbb&t=";
 let main_image = document.getElementById("main-image")
@@ -52,18 +57,9 @@ if(clickedLinkData2){{
     }
     getdetails();
 }}
+
+
 function handleClick() {
-   
-    let storedMovies = JSON.parse(localStorage.getItem("movieTitles")) || [];
-  
-    storedMovies.push(movie_title.textContent);
-  
-    localStorage.setItem("movieTitles", JSON.stringify(storedMovies));
-  
-    
-    addToWishlistBtn.innerHTML = "Added to Wishlist";
+   addToWishlistBtn.innerHTML = "Added to Wishlist";
   }
-  addToWishlistBtn.addEventListener("click", handleClick);
-  
-  const storedMovieTitles = JSON.parse(localStorage.getItem("movieTitles"));
-  console.log("Stored Movie Titles:", storedMovieTitles); 
+addToWishlistBtn.addEventListener("click", handleClick);

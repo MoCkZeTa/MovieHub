@@ -38,7 +38,7 @@ search_box.addEventListener("keypress", function (event) {
         data = search_text;
         localStorage.setItem("searchText", search_text);
         localStorage.setItem('clickedLinkData2',data );
-        let ok = localStorage.getItem("clickedLinkData2");
+        let ok = localStorage.getItem("clickedLinkData");
         console.log(ok)
         getdetails();
         
