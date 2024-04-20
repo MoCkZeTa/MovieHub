@@ -20,10 +20,6 @@ nav {
 	z-index: 5;
 }
 
-.nouse {
-	height: 6rem;
-}
-
 .overview {
 	display: flex;
 	padding: 2rem;
@@ -88,6 +84,18 @@ a {
 	text-decoration: none;
 	color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer css */
@@ -242,32 +250,30 @@ ul {
 }
 .dropdown-menu{display: none;}
 
-/* Media query for smaller screens */
 @media (max-width: 767px) {
     .nav-items ul {
-        display: none; /* Hide navigation links */
+        display: none;
     }
 
     .dropdown-menu {
-        display: none; /* Hide dropdown menu by default */
+        display: none;
         position: absolute;
-        top: 100%; /* Position below the nav-items */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: rgb(20, 20, 20);
+		margin: 0;
     }
 
     .hamburger {
-        display: block; /* Show hamburger icon */
+        display: block;
     }
 
-    /* Align logo and hamburger icon to the center */
     .logo, .nav-items {
         text-align: center;
     }
 }
 
-/* Style the dropdown links */
 .dropdown-menu li {
     text-align: center;
 }

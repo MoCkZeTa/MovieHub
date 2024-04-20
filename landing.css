@@ -226,7 +226,7 @@ nav {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    background-image: url('backgroundimage.jpg'); /* Add your image path here */
+    background-image: url('img/backgroundimage.jpg'); /* Add your image path here */
     background-size: cover;
     background-position: center;
 }
