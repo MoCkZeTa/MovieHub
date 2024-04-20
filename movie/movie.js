@@ -56,7 +56,12 @@ if(clickedLinkData){{
 
 
 function handleClick() {
-    addToWishlistBtn.innerHTML = "Added to Wishlist";
+    if(addToWishlistBtn.innerHTML === "Added to Wishlist"){
+        addToWishlistBtn.innerHTML="Add to Wishlist"
+    }
+    else if(addToWishlistBtn.innerHTML==="Add to Wishlist"){
+        addToWishlistBtn.innerHTML="Added to Wishlist"
+    }
   }
 addToWishlistBtn.addEventListener("click", handleClick);
   
